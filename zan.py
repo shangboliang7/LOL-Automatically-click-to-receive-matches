@@ -12,6 +12,7 @@ def zan(postion):
         reposition = pyautogui.locateOnScreen('zhuye.png', confidence=0.7, grayscale=False)
         if  reposition:
             print("有人拒绝对局，重新匹配！")
+            time.sleep(5)
             return False
         else:
             print("游戏已进入！")
